@@ -3,296 +3,149 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>すなばカフェ | 1960年創業 今治の純喫茶</title>
-<style>
 
-:root{
---green:#2f4f3e;
---cream:#f4efe6;
---brown:#2c1b12;
---accent:#6b2b2b;
-}
+<title>すなばカフェ | 今治の純喫茶</title>
 
-body{
-margin:0;
-font-family:"Hiragino Mincho ProN",serif;
-background:var(--cream);
-color:var(--brown);
-line-height:1.9;
-}
+<link rel="stylesheet" href="style.css">
 
-.container{
-max-width:1000px;
-margin:auto;
-padding:0 20px;
-}
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;600&display=swap" rel="stylesheet">
 
-header{
-background:var(--green);
-color:white;
-}
-
-.header-inner{
-display:flex;
-justify-content:space-between;
-align-items:center;
-padding:20px 0;
-}
-
-.logo{
-font-size:24px;
-letter-spacing:3px;
-}
-
-nav a{
-color:white;
-text-decoration:none;
-margin-left:20px;
-font-size:14px;
-}
-
-nav a:hover{
-opacity:0.7;
-}
-
-.hero{
-height:420px;
-display:flex;
-align-items:center;
-justify-content:center;
-text-align:center;
-color:white;
-
-background:
-linear-gradient(rgba(0,0,0,0.45),rgba(0,0,0,0.45)),
-url("https://images.unsplash.com/photo-1509042239860-f550ce710b93");
-
-background-size:cover;
-background-position:center;
-}
-
-.hero h1{
-font-size:46px;
-letter-spacing:6px;
-margin:0;
-}
-
-.hero p{
-margin-top:15px;
-font-size:18px;
-}
-
-section{
-padding:70px 0;
-}
-
-h2{
-text-align:center;
-margin-bottom:40px;
-letter-spacing:3px;
-}
-
-.menu-grid{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
-gap:30px;
-}
-
-.menu-card{
-background:white;
-border:1px solid #ddd;
-padding:30px;
-text-align:center;
-}
-
-.menu-card h3{
-margin-top:0;
-}
-
-.menu-price{
-color:var(--accent);
-font-weight:bold;
-margin:10px 0;
-}
-
-.story{
-max-width:700px;
-margin:auto;
-text-align:center;
-}
-
-.gallery{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
-gap:15px;
-}
-
-.gallery img{
-width:100%;
-height:160px;
-object-fit:cover;
-filter:sepia(15%);
-}
-
-.info{
-background:#ebe6db;
-padding:40px;
-max-width:600px;
-margin:auto;
-}
-
-.info p{
-margin:8px 0;
-}
-
-.access{
-text-align:center;
-}
-
-iframe{
-width:100%;
-height:350px;
-border:0;
-margin-top:20px;
-}
-
-footer{
-background:var(--green);
-color:white;
-text-align:center;
-padding:25px 10px;
-margin-top:40px;
-font-size:14px;
-}
-
-@media(max-width:700px){
-
-.header-inner{
-flex-direction:column;
-gap:10px;
-}
-
-nav{
-margin-top:10px;
-}
-
-.hero h1{
-font-size:32px;
-}
-
-}
-
-</style>
 </head>
+
 <body>
+
 <header>
-<div class="container header-inner">
-<div class="logo">すなばカフェ</div>
-<nav>
-<a href="#menu">メニュー</a>
-<a href="#story">店舗紹介</a>
-<a href="#inside">店内</a>
-<a href="#access">アクセス</a>
-</nav>
+
+<div class="header-inner">
+
+<h1>すなばカフェ</h1>
+
+<p class="sub">SINCE 1960</p>
+
+<p class="catch">
+今治で長く愛される純喫茶
+</p>
+
 </div>
+
 </header>
-<section class="hero">
-<div>
-<h1>SUNABA CAFE</h1>
-<p>1960年創業 今治の街に佇む純喫茶</p>
-</div>
+
+
+<section class="about fade">
+
+<h2>すなばカフェについて</h2>
+
+<p>
+
+1960年創業の老舗喫茶店「すなばカフェ」。  
+マスター <strong>りゅうまじいちゃん</strong> が長年守り続けてきた、  
+どこか懐かしい純喫茶です。
+
+</p>
+
+<p>
+
+店内は大正モダンレトロをイメージした落ち着いた空間。  
+ウォルナットの机、  
+緑のビロード生地に白い花柄の椅子、  
+ステンドグラスのランプシェードがやさしく灯ります。
+
+</p>
+
+<p>
+
+ゆっくりと流れる時間の中で、  
+マスターこだわりのコーヒーと  
+昔ながらの喫茶メニューをお楽しみください。
+
+</p>
+
 </section>
 
-<section id="menu">
-<div class="container">
+
+
+<section class="menu fade">
+
 <h2>おすすめメニュー</h2>
 
 <div class="menu-grid">
-<div class="menu-card">
-<h3>マスターのオリジナルブレンド</h3>
-<div class="menu-price">550円</div>
-<p>
-創業当時から続く<br>
-りゅうまじいちゃんこだわりの一杯。
-</p>
+
+<div class="card">
+
+<h3>オリジナルブレンド</h3>
+
+<p>マスターこだわりのブレンドコーヒー</p>
+
+<span>550円</span>
+
 </div>
-<div class="menu-card">
-<h3>昔ながらのナポリタン</h3>
-<div class="menu-price">1100円</div>
-<p>
-甘みのあるケチャップソースの<br>
-懐かしい味。
-</p>
+
+<div class="card">
+
+<h3>ナポリタン</h3>
+
+<p>昔ながらの喫茶店の味</p>
+
+<span>1100円</span>
+
 </div>
+
 </div>
-</div>
+
 </section>
 
-<section id="story">
-<div class="container">
-<h2>すなばカフェについて</h2>
-<div class="story">
-<div class="story">
-<p>
-すなばカフェは1960年創業。<br>
-今治の街で長く愛されてきた喫茶店です。
-</p>
-<p>
-マスターのりゅうまじいちゃんが<br>
-一杯ずつ丁寧にコーヒーを淹れています。
-</p>
-<p>
-常連さんが集い、ゆったりとした時間が流れる<br>
-昔ながらの喫茶店です。
-</p>
-</div>
-</div>
-</section>
-<section id="inside">
-<div class="container">
-<h2>店内の雰囲気</h2>
-<div class="gallery">
-<img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085">
-<img src="https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb">
-<img src="https://images.unsplash.com/photo-1442512595331-e89e73853f31">
-<img src="https://images.unsplash.com/photo-1511920170033-f8396924c348">
-</div>
-</div>
-</section>
-<section>
-<div class="container">
+
+
+<section class="info fade">
+
 <h2>店舗情報</h2>
-<div class="info">
-<p>営業時間：9:00〜20:00</p>
-<p>定休日：火曜日</p>
-<p>席数：18席</p>
-<p>全席禁煙</p>
-<p>営業時間：9:00〜20:00</p>
-<p>定休日：火曜日</p>
-<p>席数：18席</p>
-<p>全席禁煙</p>
+
+<ul>
+
+<li>住所：今治市常磐町４丁目８−１８</li>
+
+<li>しまなみイノベーションビル2F SUNABACO今治</li>
+
+<li>営業時間：9:00〜20:00</li>
+
+<li>定休日：火曜日</li>
+
+<li>座席数：18席</li>
+
+<li>全席禁煙</li>
+
+</ul>
+
+<h3>駐車場</h3>
+
 <p>
-住所：愛媛県今治市常磐町4丁目8-18<br>
-しまなみイノベーションビル2F<br>
-SUNABACO今治
+
+専用駐車場はありません。  
+今治駅前「駅東第一駐車場」をご利用ください。  
+
 </p>
+
 <p>
-駐車場：今治駅前 駅東第一駐車場<br>
-今治市北宝来町1丁目729-18
+
+住所：今治市北宝来町１丁目７２９−１８
+
 </p>
-</div>
-</div>
+
 </section>
-<section id="access">
-<div class="container access">
-<h2>アクセス</h2>
-<iframe
-src="https://maps.google.com/maps?q=今治市常磐町4丁目8-18&t=&z=15&ie=UTF8&iwloc=&output=embed">
-</iframe>
-</div>
-</section>
+
+
+
 <footer>
-<p>© 1960 すなばカフェ</p>
+
+<p>
+
+© すなばカフェ
+
+</p>
+
 </footer>
+
+<script src="script.js"></script>
+
 </body>
 </html>
