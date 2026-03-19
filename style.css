@@ -202,3 +202,28 @@ h1, h2, h3 {
     text-align: center;
   }
 }
+
+.staff {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 60px;
+}
+
+.staff img {
+  width: 300px;
+  border-radius: 10px;
+}
+
+.staff-text {
+  max-width: 450px;
+  text-align: left;
+  line-height: 1.8;
+}
+
+.recruit {
+  margin-top: 20px;
+  padding: 15px;
+  background-color: rgba(0,0,0,0.3);
+  border-radius: 10px;
+}
