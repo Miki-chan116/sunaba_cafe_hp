@@ -154,6 +154,41 @@ h1, h2, h3 {
   justify-content: center;
 }
 
+
+.staff-name {
+  font-family: 'Shippori Mincho', serif;
+  font-size: 20px;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #d8cbb3;
+  display: inline-block;
+  padding-bottom: 5px;
+}
+
+.staff {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 60px;
+}
+
+.staff img {
+  width: 300px;
+  border-radius: 10px;
+}
+
+.staff-text {
+  max-width: 450px;
+  text-align: left;
+  line-height: 1.8;
+}
+
+.recruit {
+  margin-top: 20px;
+  padding: 15px;
+  background-color: rgba(0,0,0,0.3);
+  border-radius: 10px;
+}
+
 /* スマホ */
 @media (max-width: 768px) {
 
@@ -204,26 +239,14 @@ h1, h2, h3 {
 }
 
 .staff {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 60px;
+  flex-direction: column;
 }
 
 .staff img {
-  width: 300px;
-  border-radius: 10px;
+  width: 80%;
+  max-width: 300px;
 }
 
 .staff-text {
-  max-width: 450px;
-  text-align: left;
-  line-height: 1.8;
-}
-
-.recruit {
-  margin-top: 20px;
-  padding: 15px;
-  background-color: rgba(0,0,0,0.3);
-  border-radius: 10px;
+  text-align: center;
 }
