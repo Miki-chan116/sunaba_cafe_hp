@@ -78,22 +78,39 @@ h1, h2, h3 {
 }
 
 /* ご挨拶 */
-.greeting {
+.profile {
   display: flex;
   justify-content: center;
-  gap: 60px;
   align-items: center;
+  gap: 60px;
+  margin-bottom: 60px;
 }
 
-.greeting img {
-  width: 320px;
+.profile img {
+  width: 300px;
   border-radius: 10px;
 }
 
-.greeting .text {
+.profile-text {
   max-width: 450px;
   text-align: left;
   line-height: 1.8;
+}
+
+.profile-text h3 {
+  font-family: 'Shippori Mincho', serif;
+  font-size: 20px;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #d8cbb3;
+  display: inline-block;
+  padding-bottom: 5px;
+}
+
+.recruit {
+  margin-top: 20px;
+  padding: 15px;
+  background-color: rgba(0,0,0,0.3);
+  border-radius: 10px;
 }
 
 /* 店内 */
@@ -154,41 +171,6 @@ h1, h2, h3 {
   justify-content: center;
 }
 
-
-.staff-name {
-  font-family: 'Shippori Mincho', serif;
-  font-size: 20px;
-  margin-bottom: 10px;
-  border-bottom: 1px solid #d8cbb3;
-  display: inline-block;
-  padding-bottom: 5px;
-}
-
-.staff {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 60px;
-}
-
-.staff img {
-  width: 300px;
-  border-radius: 10px;
-}
-
-.staff-text {
-  max-width: 450px;
-  text-align: left;
-  line-height: 1.8;
-}
-
-.recruit {
-  margin-top: 20px;
-  padding: 15px;
-  background-color: rgba(0,0,0,0.3);
-  border-radius: 10px;
-}
-
 /* スマホ */
 @media (max-width: 768px) {
 
@@ -201,13 +183,23 @@ h1, h2, h3 {
     font-size: 24px;
   }
 
-  .greeting {
+@media (max-width: 768px) {
+
+  .profile {
     flex-direction: column;
+    text-align: center;
   }
 
-  .greeting img {
+  .profile img {
     width: 80%;
+    max-width: 300px;
   }
+
+  .profile-text {
+    text-align: center;
+  }
+
+}
 
   .gallery {
     flex-direction: column;
@@ -238,15 +230,3 @@ h1, h2, h3 {
   }
 }
 
-.staff {
-  flex-direction: column;
-}
-
-.staff img {
-  width: 80%;
-  max-width: 300px;
-}
-
-.staff-text {
-  text-align: center;
-}
