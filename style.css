@@ -77,24 +77,27 @@ h1, h2, h3 {
   text-align: center;
 }
 
-/* ご挨拶 */
+/* ご挨拶・スタッフ */
 .profile {
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start; /* 上揃えに変更 */
   gap: 60px;
   margin-bottom: 60px;
+  flex-wrap: wrap; /* 画面が狭いと折り返す */
 }
 
 .profile img {
   width: 300px;
   border-radius: 10px;
+  object-fit: cover;
 }
 
 .profile-text {
   max-width: 450px;
   text-align: left;
   line-height: 1.8;
+  min-height: 220px; /* 高さを揃える */
 }
 
 .profile-text h3 {
@@ -111,6 +114,7 @@ h1, h2, h3 {
   padding: 15px;
   background-color: rgba(0,0,0,0.3);
   border-radius: 10px;
+  line-height: 1.6;
 }
 
 /* 店内 */
@@ -188,6 +192,8 @@ h1, h2, h3 {
   .profile {
     flex-direction: column;
     text-align: center;
+    align-items: center;
+    gap: 30px;
   }
 
   .profile img {
@@ -197,6 +203,7 @@ h1, h2, h3 {
 
   .profile-text {
     text-align: center;
+    min-height: auto; /* 高さは自動で調整 */
   }
 
 }
