@@ -33,12 +33,10 @@ h1, h2, h3 {
 .hero::before {
   content: "";
   position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
+  inset: 0;
   background-color: rgba(0,0,0,0.5);
 }
+
 .hero-text {
   position: relative;
   z-index: 1;
@@ -77,44 +75,45 @@ h1, h2, h3 {
   text-align: center;
 }
 
-/* ご挨拶・スタッフ */
-.profile {
+/* プロフィール（カード型） */
+.profiles {
   display: flex;
   justify-content: center;
-  align-items: flex-start; /* 上揃えに変更 */
-  gap: 60px;
-  margin-bottom: 60px;
-  flex-wrap: wrap; /* 画面が狭いと折り返す */
+  gap: 40px;
+  flex-wrap: wrap;
 }
 
-.profile img {
-  width: 300px;
-  border-radius: 10px;
+.profile-card {
+  width: 280px;
+  text-align: center;
+}
+
+.profile-card img {
+  width: 100%;
+  height: 350px;
   object-fit: cover;
+  border-radius: 10px;
 }
 
-.profile-text {
-  max-width: 450px;
-  text-align: left;
-  line-height: 1.8;
-  min-height: 220px; /* 高さを揃える */
-}
-
-.profile-text h3 {
+.profile-card h3 {
+  margin: 15px 0 10px;
   font-family: 'Shippori Mincho', serif;
-  font-size: 20px;
-  margin-bottom: 10px;
-  border-bottom: 1px solid #d8cbb3;
-  display: inline-block;
-  padding-bottom: 5px;
 }
 
-.recruit {
-  margin-top: 20px;
-  padding: 15px;
+.profile-card p {
+  line-height: 1.8;
+  font-size: 14px;
+}
+
+/* 募集 */
+.recruit-box {
+  margin-top: 60px;
+  padding: 30px;
   background-color: rgba(0,0,0,0.3);
   border-radius: 10px;
-  line-height: 1.6;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /* 店内 */
@@ -175,7 +174,7 @@ h1, h2, h3 {
   justify-content: center;
 }
 
-/* スマホ */
+/* スマホ対応 */
 @media (max-width: 768px) {
 
   .hero {
@@ -187,27 +186,17 @@ h1, h2, h3 {
     font-size: 24px;
   }
 
-@media (max-width: 768px) {
-
-  .profile {
+  /* プロフィール */
+  .profiles {
     flex-direction: column;
-    text-align: center;
     align-items: center;
-    gap: 30px;
   }
 
-  .profile img {
-    width: 80%;
-    max-width: 300px;
+  .profile-card {
+    width: 90%;
   }
 
-  .profile-text {
-    text-align: center;
-    min-height: auto; /* 高さは自動で調整 */
-  }
-
-}
-
+  /* 店内 */
   .gallery {
     flex-direction: column;
     align-items: center;
@@ -217,10 +206,12 @@ h1, h2, h3 {
     width: 90%;
   }
 
+  /* メニュー */
   .item {
     width: 45%;
   }
 
+  /* 店舗情報 */
   .info {
     flex-direction: column;
     align-items: center;
@@ -235,5 +226,5 @@ h1, h2, h3 {
     width: 90%;
     text-align: center;
   }
-}
 
+}
